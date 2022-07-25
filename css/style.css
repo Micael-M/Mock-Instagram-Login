@@ -98,8 +98,9 @@ body {
   color: #0095f6;
 }
 
-.get-app {
+.get-apps {
   display: flex;
+  flex-direction: column;
   line-height: 18px;
   align-items: center;
   justify-content: center;
@@ -129,4 +130,32 @@ body {
   background-image: url(/images/googleplay-button.png);
 }
 
+/* mobile - media queries */
 
+@media (max-width: 1024px) {
+  .main-login {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .main-login {
+    width: 90%;
+  }
+
+  .image-instagram {
+    display: none;
+  }
+
+  .continue-instagram {
+    width: 100%;
+  }
+
+  .group-continue {
+    border: 1px solid transparent;
+  }
+}
